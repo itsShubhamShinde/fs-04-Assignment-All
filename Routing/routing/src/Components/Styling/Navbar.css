@@ -22,3 +22,13 @@
     font-weight: bold;
     font-size: 1.3rem;
 }
+.navbarDiv button{
+    padding: 0.2rem 1rem;
+    border-radius: 8px;
+}
+.navbarDiv Span{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+}
