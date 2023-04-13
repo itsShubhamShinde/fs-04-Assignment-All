@@ -1,0 +1,24 @@
+.navbarDiv{
+    /* border: 2px solid blue; */
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbarDiv ul{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+.navbarDiv ul li{
+    list-style: none;
+    color: white;
+}
+.navbarDiv a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
