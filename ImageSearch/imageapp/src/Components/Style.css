@@ -1,12 +1,10 @@
 .OuterDiv{
-    /* border: 2px solid blue; */
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
 }
 .Navbar{
-    /* border: 2px solid red; */
     height: 10%;
     width: 100%;
     padding-left: 30px;
@@ -15,7 +13,6 @@
     align-items: center;
 }
 .searchinputDiv{
-    /* border: 2px solid green; */
     width: 40%;
     height: 100%;
     display: flex;
@@ -38,7 +35,45 @@
     background-color: black;
 }
 .mainSection{
-    border: 2px solid blue;
     height: 90%;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+.cardMainDiv{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+.cardDiv{
+    border: 1px solid black;
+    height: 450px;
+    width: 400px;
+    border-radius: 8px;
+    margin: 20px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.cardDiv p{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.Error{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.NotFound{
+    height: 50%;
+    width: 50%;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
