@@ -1,0 +1,44 @@
+.OuterDiv{
+    /* border: 2px solid blue; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.Navbar{
+    /* border: 2px solid red; */
+    height: 10%;
+    width: 100%;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.searchinputDiv{
+    /* border: 2px solid green; */
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchinputDiv input{
+    width: 50%;
+    height: 60%;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.searchinputDiv button{
+    width: 20%;
+    height: 60%;
+    margin-left: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+.mainSection{
+    border: 2px solid blue;
+    height: 90%;
+    width: 100%;
+}
