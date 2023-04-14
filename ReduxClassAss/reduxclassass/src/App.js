@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Components/Home';
+import Navbar from './Components/Navbar';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import Technologies from './Components/Technologies';
+import Product from './Components/Product';
+import ReactBasic from './Components/ReactBasic';
+import CompHTML from './Components/CompHTML';
+import CompCSS from './Components/CompCSS';
+import ReactJS from './Components/ReactJS';
+import NodeJS from './Components/NodeJS';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      
+        <Navbar/> 
+      
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/tech' element={<Technologies />} >
+          <Route path="" element={<Navigate to="html" />} />
+          <Route path="html" element={<CompHTML />} />
+          <Route path="css" element={<CompCSS />} />
+          <Route path="react" element={<ReactJS />} />
+          <Route path="node" element={<NodeJS />} />
+        </Route>
+        <Route path='/product' element={<Product />} />
+        <Route path='/react' element={<ReactBasic /> } />
+      </Routes>
     </div>
   );
 }
